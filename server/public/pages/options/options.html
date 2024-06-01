@@ -37,14 +37,23 @@
     </nav>
     <section class="page-content">
         <h1 class="page-content__title">Options</h1>
-        <div class="page-content-controls">
-            <button
-                    type="button"
-                    class="page-content-controls__button page-content-controls__button_create"
-            >
-                Create
-            </button>
-        </div>
+        <form id="optionsForm" action="#" method="post" class="page-content-form">
+            <fieldset>
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="name">Название</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                </fieldset>
+
+                <button
+                        type="submit"
+                        class="page__button page__button_create"
+                >
+                    Create
+                </button>
+            </fieldset>
+        </form>
         <table class="page-content-table" id="optionsTable">
             <thead>
             <tr>

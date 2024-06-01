@@ -46,7 +46,7 @@ function getModels(table) {
 
         connection.connect();
 
-        const sql = `select * from ${table}`;
+        const sql = `select * from ${table} order by id desc;`;
 
         await connection.query(sql, (error, rows) => {
             connection.end();
@@ -95,7 +95,7 @@ function deleteModel(table, id) {
 
         connection.connect();
 
-        const sql = `delete from ${table} where id = ${id}`;
+        const sql = `delete from ${table} where id = ${id};`;
 
         await connection.query(sql, (error) => {
             connection.end();
@@ -132,7 +132,7 @@ function createApiRoute(route, table) {
             return res.status(422).json({message});
         })
         .delete(async (req, res) => {
-            const {id} = req.params;
+            const {id} = req.query;
 
             const [status, message] = await deleteModel(table, id);
 

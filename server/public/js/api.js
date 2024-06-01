@@ -32,11 +32,7 @@ export async function postMutation(path, body) {
         body: JSON.stringify(body),
     });
 
-    if (response.ok) {
-        return await response.json();
-    }
-
-    return false;
+    return response.ok;
 }
 
 export async function deleteMutation(path, id) {
@@ -45,9 +41,5 @@ export async function deleteMutation(path, id) {
         method: 'DELETE',
     });
 
-    if (response.ok) {
-        return await response.json();
-    }
-
-    return false;
+    return response.ok;
 }

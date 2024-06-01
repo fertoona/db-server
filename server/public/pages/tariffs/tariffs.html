@@ -37,14 +37,47 @@
     </nav>
     <section class="page-content">
         <h1 class="page-content__title">Tariffs</h1>
-        <div class="page-content-controls">
-            <button
-                    type="button"
-                    class="page-content-controls__button page-content-controls__button_create"
-            >
-                Create
-            </button>
-        </div>
+        <form id="tariffsForm" action="#" method="post" class="page-content-form">
+            <fieldset>
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="name">Название</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+
+                    <div class="page-content-form__group">
+                        <label for="description">Описание</label>
+                        <input id="description" name="description" type="text" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="type">Тип</label>
+                        <input id="type" name="type" type="text" required>
+                    </div>
+
+                    <div class="page-content-form__group">
+                        <label for="monthly_fee">Стоимость</label>
+                        <input id="monthly_fee" name="monthly_fee" type="number" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="status">Статус</label>
+                        <input id="status" name="status" type="text" required>
+                    </div>
+                </fieldset>
+
+                <button
+                        type="submit"
+                        class="page__button page__button_create"
+                >
+                    Create
+                </button>
+            </fieldset>
+        </form>
         <table class="page-content-table" id="tariffsTable">
             <thead>
             <tr>

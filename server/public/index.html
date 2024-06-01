@@ -38,14 +38,57 @@
 
     <section class="page-content">
         <h1 class="page-content__title">Customers</h1>
-        <div class="page-content-controls">
-            <button
-                    type="button"
-                    class="page-content-controls__button page-content-controls__button_create"
-            >
-                Create
-            </button>
-        </div>
+        <form id="customersForm" action="#" method="post" class="page-content-form">
+            <fieldset>
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="fullname">Полное имя</label>
+                        <input id="fullname" name="fullname" type="text" required>
+                    </div>
+
+                    <div class="page-content-form__group">
+                        <label for="birthday">Дата рождения</label>
+                        <input id="birthday" name="birthday" type="date" required>
+                    </div>
+
+                    <div class="page-content-form__group">
+                        <label for="address">Адрес</label>
+                        <input id="address" name="address" type="text" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="passport">Паспорт</label>
+                        <input id="passport" name="passport" type="number" required>
+                    </div>
+
+                    <div class="page-content-form__group">
+                        <label for="snils">СНИЛС</label>
+                        <input id="snils" name="snils" type="number" required>
+                    </div>
+
+                    <div class="page-content-form__group">
+                        <label for="inn">ИНН</label>
+                        <input id="inn" name="inn" type="number" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="page-content-form__group">
+                        <label for="email">Электронная почта</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                </fieldset>
+
+                <button
+                        type="submit"
+                        class="page__button page__button_create"
+                >
+                    Create
+                </button>
+            </fieldset>
+        </form>
         <table class="page-content-table" id="customersTable">
             <thead>
             <tr>

@@ -94,19 +94,60 @@ html {
     font-size: 1.5rem;
 }
 
-.page-content-controls__button {
+.page-content-form {
+    margin-bottom: 1.5rem;
+}
+
+.page__button {
     text-align: center;
-    height: 3rem;
-    width: 15rem;
-    margin-left: 1rem;
-    margin-bottom: 3rem;
+    padding: 1rem 5rem;
     border-radius: 0.5rem;
     outline: none;
     border: none;
+
+    cursor: pointer;
 }
 
-.page-content-controls__button_create {
+.page__button_delete {
+    padding: .5rem .7rem;
+    background-color: #b00707;
+    color: white;
+}
+
+.page__button_create {
     background-color: #81ff55;
+}
+
+.page-content-form fieldset {
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    border-radius: .5rem;
+}
+
+.page-content-form fieldset > fieldset {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.page-content-form__group {
+    width: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.page-content-form input {
+    width: 100%;
+
+    outline: none;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    padding: .4rem .7rem;
 }
 
 .page-content-table {
@@ -120,6 +161,13 @@ html {
     text-transform: capitalize;
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+.page-content-table th:last-child,
+.page-content-table td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-content-table th {

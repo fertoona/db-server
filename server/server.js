@@ -158,5 +158,5 @@ initDb()
     })
     .catch((error) => {
         console.log('app not started, db was not initialized');
-        console.log(error.message);
+        console.log(error.sqlMessage);
     })

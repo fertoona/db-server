@@ -59,7 +59,7 @@ export function fillTable(tableId, data, dbTable) {
 
     const headerValues = Object.keys(data[0]);
 
-    const headerRow = createTableRow('td', [...headerValues, 'actions']);
+    const headerRow = createTableRow('th', [...headerValues, 'actions']);
 
     tableHead.appendChild(headerRow);
 

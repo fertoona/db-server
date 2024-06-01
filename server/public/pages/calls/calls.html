@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../styles/style.css"/>
+    <script type="module" src="./calls.js" defer></script>
+    <title>Администрация</title>
+</head>
+<body class="page">
+<header class="page-header">
+    <h1 class="page-header__title">СвязьПлюс</h1>
+</header>
+
+<main class="page__wrapper">
+    <nav class="page-navigation">
+        <div class="page-navigation__search">
+            <span>Search...</span>
+        </div>
+        <div class="page__label">
+            <span>Administration</span>
+        </div>
+        <ul class="page-navigation-list">
+            <li class="page-navigation-list__element">
+                <a href="../../index.html">Customers</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="../tariffs/tariffs.html">Tariffs</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="#">Calls</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="../options/options.html">Options</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="page-content">
+        <h1 class="page-content__title">Calls</h1>
+        <div class="page-content-controls">
+            <button
+                    type="button"
+                    class="page-content-controls__button page-content-controls__button_create"
+            >
+                Create
+            </button>
+        </div>
+        <table class="page-content-table" id="callsTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>to_phone_number</th>
+                <th>call_start_time</th>
+                <th>call_end_time</th>
+                <th>call_duration</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>+7456789012</td>
+                <td>12:14</td>
+                <td>12:30</td>
+                <td>16 min</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../styles/style.css"/>
+    <script type="module" src="./tariffs.js" defer></script>
+    <title>Администрация</title>
+</head>
+<body class="page">
+<header class="page-header">
+    <h1 class="page-header__title">СвязьПлюс</h1>
+</header>
+
+<main class="page__wrapper">
+    <nav class="page-navigation">
+        <div class="page-navigation__search">
+            <span>Search...</span>
+        </div>
+        <div class="page__label">
+            <span>Administration</span>
+        </div>
+        <ul class="page-navigation-list">
+            <li class="page-navigation-list__element">
+                <a href="../../index.html">Customers</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="#">Tariffs</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="../calls/calls.html">Calls</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="../options/options.html">Options</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="page-content">
+        <h1 class="page-content__title">Tariffs</h1>
+        <div class="page-content-controls">
+            <button
+                    type="button"
+                    class="page-content-controls__button page-content-controls__button_create"
+            >
+                Create
+            </button>
+        </div>
+        <table class="page-content-table" id="tariffsTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Monthly-fee</th>
+                <th>Option</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Global</td>
+                <td>Мобильная связь + Интертнет + СМС + Доступ к онлайн кинотевтрам</td>
+                <td>Вы не прогодаете с данным тарифом, он самый популярный и выгодный.</td>
+                <td>800 р</td>
+                <td>Звонки по всей России, мобильный интернет 25 Гб</td>
+                <td>активный</td>
+            </tr>
+            </tbody>
+
+
+</main>
+</body>
+</html>

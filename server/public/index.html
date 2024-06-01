@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <script type="module" src="./customers.js" defer></script>
+    <title>Администрация</title>
+</head>
+<body class="page">
+<header class="page-header">
+    <h1 class="page-header__title">СвязьПлюс</h1>
+</header>
+
+<main class="page__wrapper">
+    <nav class="page-navigation">
+        <div class="page-navigation__search">
+            <span>Search...</span>
+        </div>
+        <div class="page__label">
+            <span>Administration</span>
+        </div>
+        <ul class="page-navigation-list">
+            <li class="page-navigation-list__element">
+                <a href="#">Customers</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="./pages/tariffs/tariffs.html">Tariffs</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="./pages/calls/calls.html">Calls</a>
+            </li>
+            <li class="page-navigation-list__element">
+                <a href="./pages/options/options.html">Options</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="page-content">
+        <h1 class="page-content__title">Customers</h1>
+        <div class="page-content-controls">
+            <button
+                    type="button"
+                    class="page-content-controls__button page-content-controls__button_create"
+            >
+                Create
+            </button>
+        </div>
+        <table class="page-content-table" id="customersTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fullname</th>
+                <th>Birthday</th>
+                <th>Passport</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Snils</th>
+                <th>INN</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Demchenko Anna Nikolaevna</td>
+                <td>08.04.2004</td>
+                <td>5647898989</td>
+                <td>Moscow</td>
+                <td>annatest@gmail.com</td>
+                <td>1234567891</td>
+                <td>123456789012</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>
